@@ -29,7 +29,7 @@ j=0
 error=0
 
 #获取前3000张图片
-echo = 1
+echo = 10
 while(n<30*echo):
         n+=30
         #url链接
@@ -71,11 +71,4 @@ while(n<30*echo):
             path =  path.replace("thumbURL\":\"", "")
             print(path)
             urllib.request.urlretrieve(path, "./images/pic{num}.jpg".format(num=j))
-            j+=1
-
-        # for path in s:
-        #     print(path)　　　　　　　       
-        #     i=path.replace("thumbURL\":\"", "")　　　　　　　
-        #     # print(i)　　　　　　　　　　　
-        #     # urllib.request.urlretrieve(i,"./images/pic{num}.jpg".format(num=j))
-        #     # j+=1　　　　　　　　　   　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+            j+=1　　　　　　　　   　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
